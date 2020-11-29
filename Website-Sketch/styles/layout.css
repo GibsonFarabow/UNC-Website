@@ -10,12 +10,14 @@ html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than 
 
 body{margin:0;padding:0;font-size:15px;font-family: Georgia, "Times New Roman", Times, serif;color:#404040;background-color:#FFFFFF;}
 
-.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear:after{content:"."; color:#0066ff; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
 .clear{display:block; clear:both;}
 html[xmlns] .clear{display:block;}
 * html .clear{height:1%;}
 
-a{outline:none; text-decoration:none;}
+a{color:#0066ff; outline:none; text-decoration:none;}
+a:visited {color:#0066ff;}
+a:hover{color:#FF9900; background-color:#FFFFFF;}
 
 code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roman", Times, serif;}
 
@@ -41,9 +43,9 @@ div.wrapper{display:block; width:960px; margin:0 auto; padding:0; text-align:lef
 
 .row1, .row1 a{color:  #404040;background-color:#FFFFFF;}
 .row2{background-color:#FFFFFF; font-family: Georgia, sans-serif}
-.row2 a{background-color:#FFFFFF;}
+.row2 a{background-color:#FFFFFF; color:#0066ff}
 .row3{border-top:1px solid #DEDEDE;}              /* border */
-.row3, .row3 a{color:#979797; background-color:#FFFFFF; font-size:12px}
+.row3, .row3 a{color:#979797; background-color:#FFFFFF; font-size:12px, color:#0066ff}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
@@ -92,12 +94,16 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
 
 #container #slider{}
 
+  a{color:#0066ff; outline:none; text-decoration:none;}
+  a:visited {color:##0066ff;}
+  a:hover{color:#FF9900; background-color:#FFFFFF;}
+
 /* ------Left Column-----*/
 
 #container #left_column a:hover{color:#FF9900; background-color:#FFFFFF;width:280px;}
 
 
-#container #left_column nav a{display:block; margin:0; padding:5px 10px 5px 20px; color:blue; background:url("../images/orange_file.gif") no-repeat 10px center #FFFFFF; text-decoration:none; border-bottom:1px dotted #666666;}
+#container #left_column nav a{display:block; margin:0; padding:5px 10px 5px 20px; background:url("../images/orange_file.gif") no-repeat 10px center #FFFFFF; text-decoration:none; border-bottom:1px dotted #666666;}
 #container #left_column nav hover{color:#FF9900; background-color:#FFFFFF;}
 
 /* ------Main Content-----*/
